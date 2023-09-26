@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  color: white;
+}
+
+.wrapper {
+  @apply flex bg-slate-600 h-screen w-full justify-center items-center;
+}
+
+.input {
+  @apply w-80 p-2 outline-none bg-slate-600 bg-none border-b-2 mr-3;
+}
+
+.btn {
+  @apply w-20 outline outline-1 hover:bg-slate-300 hover:text-slate-950;
+}
+
+.todo {
+  @apply absolute  min-w-[250px] p-3 rounded-xl text-slate-900;
+}
+.delete {
+  @apply absolute top-2 right-2 text-slate-950;
+}
